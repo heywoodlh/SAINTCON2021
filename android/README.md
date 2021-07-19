@@ -119,3 +119,20 @@ chmod +x ~/.termux/boot/adb
 ```
 
 This will run adb on port 5555 and `iptables` will only allow incoming traffic on port 5555 from the interface `tun0` -- which is the default VPN interface on Android. Meaning that remote ADB will only be accessible to my devices in the same Wireguard instance.
+
+To make the remote ADB instance available to my laptop, I use SSH:
+
+```bash
+ssh -L 5555:127.0.0.1:5555 -qCN kali-phone
+
+```
+
+Then connect with `adb` to the local port:
+
+```
+adb connect localhost:5555
+```
+
+You will probably need to open your phone and approve the connection request.
+
+Once connected, you can use `adb` as though it were locally connected through a USB cable. You can even do screen capture using this remote ADB session, although it's very slow. 
