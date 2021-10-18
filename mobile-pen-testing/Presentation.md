@@ -135,13 +135,7 @@ To flash NetHunter and Magisk:
 -------------------------------------------------
 # Remote Access
 
-I have a Wireguard server setup which allows me to securely tunnel encrypted traffic between the OnePlus One and other devices that need to access it remotely. The Android has been configured to have the Wireguard tunnel to be always-on.
-
-Termux has been configured with OpenSSH server running on port 2022.
-
-NetHunter has OpenSSH server running on port 2024.
-
-![width:800px height:400px](images/wireguard.png)
+![width:800px height:400px center](images/wireguard.png)
 
 -------------------------------------------------
 # What Can You Do?
@@ -175,7 +169,10 @@ So now we have a simple but effective method of doing a vulnerability scan from 
 -------------------------------------------------
 # Vulnerability Scan and Exploit from an Android
 
-
+<video controls width="800">
+    <source src="videos/mobile-pwn.mp4"
+            type="video/mp4">
+</video>
 
 -------------------------------------------------
 
