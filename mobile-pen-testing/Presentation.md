@@ -69,10 +69,10 @@ Just to give you some ideas on how inexpensive this whole setup is.
 Used prices @ [Swappa](https://swappa.com):
 
 - Used OnePlus 3 (starts at $70):
-![width:800px height:100px](images/oneplus3.png)
+![width:400px height:100px](images/oneplus3.png)
 
 - Used Nexus 5X (starts at $60):
-![width:800px height:100px](images/nexus-5x.png)
+![width:400px height:100px](images/nexus-5x.png)
 
 -------------------------------------------------
 # My Build Specs
@@ -91,9 +91,7 @@ Operating System/Tweaks:
 -------------------------------------------------
 # Process for Flashing
 
-This process may vary based on your device, but should be around the same -- refer to the documentation for LineageOS, NetHunter and Magisk for device-specific instruction.
-
-Flashing LineageOS is relatively simple using a computer with `adb` and `fastboot` installed:
+Flashing LineageOS is relatively simple using a computer with `adb` and `fastboot` installed (these are the steps for the OnePlus One):
 1. Enable Android Debugging on your device
 2. Boot into bootloader: `adb reboot bootloader`
 3. Unlock bootloader: `fastboot oem unlock`
@@ -101,6 +99,8 @@ Flashing LineageOS is relatively simple using a computer with `adb` and `fastboo
 5. Flash Lineage recovery: `fastboot flash recovery <recovery_filename>.img`
 6. Boot into recovery (normally by pressing a certain button combination on the phone while booting)
 7. In Lineage Recovery, go to Apply Update > Apply from ADB and then run the following command to sideload LineageOS' image: `adb sideload <image>.zip`
+
+-------------------------------------------------
 
 To flash NetHunter and Magisk:
 1. Boot into recovery
@@ -115,6 +115,7 @@ To flash NetHunter and Magisk:
 - [Kali Nethunter App Store](https://store.nethunter.com/): Fork of F-Droid with repositories containing Android security applications available for use with Nethunter. You do not need to flash Kali Nethunter on the device to use the app store.
 
 
+-------------------------------------------------
 ## Security apps:
 
 - [Nethunter](https://store.nethunter.com/en/packages/com.offsec.nethunter/): Provides a full emulated Kali environment running on the Android device
@@ -123,8 +124,9 @@ To flash NetHunter and Magisk:
 - [Termux](https://f-droid.org/en/packages/com.termux/): Terminal emulator, runs a custom Linux environment
 - [Termux:Boot](https://f-droid.org/en/packages/com.termux.boot/): Runs Termux scripts automatically on boot
 - [Termux:API](https://f-droid.org/en/packages/com.termux.api/): Provides Termux additional access to view or configure additional Android hardware (location, sensors, etc.)
-- [DriveDroid](https://store.nethunter.com/en/packages/com.softwarebakery.drivedroid/): 
+- [DriveDroid](https://store.nethunter.com/en/packages/com.softwarebakery.drivedroid/): Enables Android to emulate USB boot device and boot from any ISO stored on the phone
 
+-------------------------------------------------
 ## Other apps:
 
 - [Wireguard](https://f-droid.org/en/packages/com.wireguard.android/): open source VPN application/protocol -- very resilient to disconnects
@@ -175,4 +177,9 @@ So now we have a simple but effective method of doing a vulnerability scan from 
 
 
 
+-------------------------------------------------
+
+Try it out yourself!
+
+The End.
 -------------------------------------------------
