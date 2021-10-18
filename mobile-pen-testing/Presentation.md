@@ -13,6 +13,10 @@ _paginate: false
 
 #### \*Ideas on building a red-team device in a mobile form-factor\*  
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 
 ### Spencer Heywood
@@ -20,6 +24,10 @@ _paginate: false
 Blog: __https://the-empire.systems__
 
 Github: __https://github.com/heywoodlh/__
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # Form Factor
@@ -33,6 +41,10 @@ Github: __https://github.com/heywoodlh/__
 Supports LineageOS & Kali NetHunter.
 
 _iOS' security and environment restrictions make it a poor platform for this type of workflow_
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # Recommendations
@@ -51,6 +63,10 @@ Don't be intimidated by these recommendations -- they're fairly simple to learn.
 
 _* Check the LineageOS wiki if your desired device is still receiving OS updates_
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 
 # <!--fit--> A good suggestion: DON'T ROOT OR INSTALL NETHUNTER ON YOUR DAILY DRIVER
@@ -60,6 +76,10 @@ Rooting an Android device drastically reduces its security and pen-testing tools
 Buy a separate device for this workflow. I like [Swappa](https://swappa.com) & [eBay](https://www.ebay.com) for buying used Android devices. 
 
 Kali NetHunter has a rootless version, but rooting makes the device much more capable. I recommend that if you dedicate a phone to something like this that you just root it.
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # Window Shopping (as of October 18, 2021)
@@ -73,6 +93,10 @@ Used prices @ [Swappa](https://swappa.com):
 
 - Used Nexus 5X (starts at $60):
 ![width:400px height:100px](images/nexus-5x.png)
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # My Build Specs
@@ -88,6 +112,10 @@ Operating System/Tweaks:
 - Flashed NetHunter on top of LineageOS
 - Flashed [Magisk](https://magisk.me/) to manage root access
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 # Process for Flashing
 
@@ -100,11 +128,19 @@ Flashing LineageOS is relatively simple using a computer with `adb` and `fastboo
 6. Boot into recovery (normally by pressing a certain button combination on the phone while booting)
 7. In Lineage Recovery, go to Apply Update > Apply from ADB and then run the following command to sideload LineageOS' image: `adb sideload <image>.zip`
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 
 To flash NetHunter and Magisk:
 1. Boot into recovery
 2. In Lineage Recovery, go to Apply Update > Apply from ADB and then run the following command for the NetHunter image and then the Magisk image: `adb sideload <image>.zip`
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # Essential Apps
@@ -113,6 +149,10 @@ To flash NetHunter and Magisk:
 
 - [F-Droid](https://f-droid.org/): Open source app store for open source apps. Available for any Android.
 - [Kali Nethunter App Store](https://store.nethunter.com/): Fork of F-Droid with repositories containing Android security applications available for use with Nethunter. You do not need to flash Kali Nethunter on the device to use the app store.
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 
 -------------------------------------------------
@@ -126,16 +166,28 @@ To flash NetHunter and Magisk:
 - [Termux:API](https://f-droid.org/en/packages/com.termux.api/): Provides Termux additional access to view or configure additional Android hardware (location, sensors, etc.)
 - [DriveDroid](https://store.nethunter.com/en/packages/com.softwarebakery.drivedroid/): Enables Android to emulate USB boot device and boot from any ISO stored on the phone
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 ## Other apps:
 
 - [Wireguard](https://f-droid.org/en/packages/com.wireguard.android/): open source VPN application/protocol -- very resilient to disconnects
 - [Hacker's Keyboard](https://f-droid.org/en/packages/org.pocketworkstation.pckeyboard/): keyboard app that provides a full QWERTY keyboard when phone is in landscape
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 # Remote Access
 
 ![width:800px height:400px center](images/wireguard.png)
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # What Can You Do?
@@ -146,6 +198,10 @@ Here are some things I've done:
 - Run a custom Linux environment that can take advantage of Android's sensors
 
 Let's go over some specific workflows.
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
 
 -------------------------------------------------
 # Vulnerability Scanning
@@ -166,6 +222,10 @@ nmap -sV --script=vulners.nse ...
 
 So now we have a simple but effective method of doing a vulnerability scan from our Android device.
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 # Vulnerability Scan and Exploit from an Android
 
@@ -174,9 +234,27 @@ So now we have a simple but effective method of doing a vulnerability scan from 
             type="video/mp4">
 </video>
 
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
+-------------------------------------------------
+# For More Info:
+
+Wrote up a lot of my setup here:
+
+https://github.com/heywoodlh/SAINTCON2021/blob/master/android/README.md
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
+
 -------------------------------------------------
 
 Try it out yourself!
 
 The End.
--------------------------------------------------
+
+<footer>
+https://github.com/heywoodlh/SAINTCON2021/
+</footer>
